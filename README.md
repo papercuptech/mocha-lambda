@@ -1,5 +1,5 @@
 # Provide mocha `this` context to lambda functions
-This is a prototype, alpha solution enabling effective use of lambdas with mocha in a backwards compatible way
+This is an alpha solution enabling effective use of lambdas with mocha in a backwards compatible way
 
 ## The quick way
 
@@ -22,6 +22,7 @@ describe('mocha-lambda', () => {
   })
 	
   it('works with done', done => {
+    assert(_tst.answer === 42)
     done()
   })
 	
