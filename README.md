@@ -75,7 +75,7 @@ describe('mocha-lambda', () => {
 
 ## If mocha interface needs to be explicitly imported, import from 'mocha-lamba' rather than 'mocha' (if this project is merged into mocha, this wont be required)
 ```javascript
-import ctx, {describe: d, it: i, beforeEach: b} from 'mocha-lambda'
+import ctx, {describe as d, it as i, beforeEach as b} from 'mocha-lambda'
 ctx('t')
 d('mocha-lambda', () => {
   i('provides "this" as "_tst"', function() {
